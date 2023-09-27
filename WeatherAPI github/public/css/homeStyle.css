@@ -1,0 +1,132 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Martian Mono', monospace;
+    font-size: 4px;
+    /* em - size realtive to base size */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.inputDiv {
+    height: 100vh;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    border: 2em solid #3c3434;
+    background-color: #8474cc;
+}
+
+input {
+    font-size: 6.5em;
+    margin: 0.5em 5em;
+    padding: 0.5em;
+    border: 0.25em solid #3c3434;
+    border-radius: 1em;
+}
+
+input:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    font-size: 6.5em;
+    margin: 0.5em 5em;
+    padding: 0.5em;
+    border: 0.25em solid #3c3434;
+    border-radius: 1em;
+    background-color: #cfadd1;
+    cursor: pointer;
+}
+
+.outputDiv {
+    height: 100vh;
+    width: 50%;
+    background-color: #cfadd1;
+    border: 2em solid #3c3434;
+    display: flex;
+    align-items: center;
+}
+
+div.card {
+    height: 120em;
+    width: fit-content;
+    min-width: 80em;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 5em;
+    border: 2em solid #3c3434;
+}
+
+div.weatherIcon {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+img {
+    height: 30em;
+    width: 30em;
+}
+
+.locDiv {
+    font-size: 7em;
+    margin: auto 1em;
+    text-align: center;
+}
+
+.locSpan {
+    font-size: 1em;
+}
+
+.tempDiv {
+    font-size: 7em;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.tempSpan {
+    font-size: 1em;
+}
+
+.condDiv {
+    font-size: 7em;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+div.airQuality {
+    display: flex;
+    flex-direction: column;
+}
+
+.airQualityTitle {
+    font-size: 7em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+div.aqMeasurnment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.temp {
+    font-size: 5em;
+}

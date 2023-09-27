@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/homeStyle.css">
+    <link rel="shortcut icon" href="/Assets/weather-app.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputDiv">
+            <form action="/" method="post">
+                <input type="text" name="state" id="stateInput" placeholder="Enter City / state / Town">
+                <input type="text" name="country" id="CountryInput" placeholder="Enter Country">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="outputDiv">
+            <div class="card">
+                <div class="locDiv"><%=locals.inputState%>, <%=locals.inputCountry%></div>
+                <div class="weatherIcon"><img src=<%=locals.condIcon%>
+                        alt="no image"></div>
+                <div class="condDiv"><%=locals.condText%></div>
+                <div class="tempDiv ">Temperature : <span class="tempSpan"><%=locals.temp_c%>&#176C</span></div>
+                <div class="airQuality">
+                    <div class="airQualityTitle">Air Quality</div>
+                    <div class="aqMeasurnment">
+                        <div class="co temp">co : <%=locals.co%></div>
+                        <div class="so2 temp">so2 : <%=locals.so2%></div><br>
+                        <div class="pm2_5 temp">pm 2.5 : <%=locals.pm2_5%></div>
+                        <div class="pm10 temp">pm 10 : <%=locals.pm10%></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+

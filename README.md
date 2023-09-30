@@ -55,8 +55,8 @@ Technologies Used
 
 Contributing
 
-If you'd like to contribute, please fork the repository and create a new branch. Pull requests are welcome.
+    If you'd like to contribute, please fork the repository and create a new branch. Pull requests are welcome.
 
 Feedback
 
-Any feedback is highly appreciated! If you have suggestions, find issues, or want to share your experience using the Weather App, please open an issue.
+    Any feedback is highly appreciated! If you have suggestions, find issues, or want to share your experience using the Weather App, please open an issue.

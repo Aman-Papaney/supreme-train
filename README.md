@@ -6,9 +6,9 @@ This Weather App provides current weather information based on user input. It ut
 
 ## Features
 
-- **Current Weather:** Get detailed information about the current weather conditions.
+- **Current Weather:** Get information about the current weather conditions.
 - **Location Search:** Search for weather information for different locations.
-- **Temperature, Humidity, and Wind:** View additional details such as temperature, humidity, and wind speed.
+- **Temperature, Air Quality:** View additional details such as temperature, Air Quality.
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ Change into the project directory:
 
 bash
 
-cd weather-app
+    cd weather-app
 
 Install dependencies:
 
@@ -30,13 +30,13 @@ bash
 
 Configuration
 
-    Obtain an API key from [Your Weather API Provider].
+    Obtain an API key from weatherapi.com.
 
     Create a .env file in the root directory of the project and add your API key:
 
     env
 
-    REACT_APP_WEATHER_API_KEY=your-api-key
+    WEATHER_API_KEY=your-api-key
 
 Usage
 
@@ -46,12 +46,12 @@ Usage
 
     npm start
 
-    Open your browser and navigate to http://localhost:3000.
+    Open your browser and navigate to http://localhost:4123.
 
 Technologies Used
 
-    React.js
-    [Your Weather API]
+    Node.js
+    weatherapi.com
 
 Contributing
 

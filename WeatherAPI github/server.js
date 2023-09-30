@@ -33,8 +33,8 @@ server.get("/", (req, res) => {
 })
 
 server.post("/", (req, res) => {
-    const state = req.body.state
-    const country = req.body.country
+    let state = req.body.state
+    let country = req.body.country
     if (country === "" && state === "") {
         country = "india"
     }

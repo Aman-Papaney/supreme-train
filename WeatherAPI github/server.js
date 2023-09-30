@@ -10,7 +10,6 @@ server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));
 
 const URL = `http://api.weatherapi.com/v1/current.json?key=${process.env.WEATHER_API_KEY}&aqi=yes&q=`
-// const BASE_URL = `http://api.weatherapi.com/v1/current.json?key=${process.env.WEATHER_API_KEY}&q=London&aqi=yes`
 
 server.get("/", (req, res) => {
 
@@ -53,7 +52,6 @@ server.post("/", (req, res) => {
                 pm2_5: response.data.current.air_quality.pm2_5,
                 pm10: response.data.current.air_quality.pm10
             })
-            console.log("-----------------------------------------------------------------------------------------------------------------");
         })
         .catch(function (error) {
             console.log(error);

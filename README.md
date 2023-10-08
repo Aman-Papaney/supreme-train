@@ -20,7 +20,7 @@ Change into the project directory:
 
 bash
 
-    cd weather-app
+    cd WeatherAPI github
 
 Install dependencies:
 
